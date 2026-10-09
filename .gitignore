@@ -1,0 +1,49 @@
+﻿## JetBrains Rider & IDE Configuration
+.idea/
+*.sln.iml
+.fleet/
+
+## Build Outputs & Compiled Binaries (matches root and all subprojects)
+[Bb]in/
+[Oo]bj/
+[Lll]og/
+[Lll]ogs/
+build/
+artifacts/
+publish/
+
+## Visual Studio & Roslyn Artifacts
+.vs/
+*.user
+*.userossc
+*.sln.docstates
+*.suo
+
+## NuGet Packages & Asset Caches
+*.nupkg
+*.snupkg
+**/packages/
+!**/packages/build/
+project.assets.json
+project.nuget.cache
+*.nuget.g.props
+*.nuget.g.targets
+
+## Test & Code Coverage Results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+_ReSharper.*/
+
+## Environment Variables & Local Configs
+*.env
+*.env.*
+!*.env.example
+appsettings.Development.json
+appsettings.Local.json
+
+## OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FontFamily x:Key="KspMonospace">Consolas, DejaVu Sans Mono, Courier New, monospace</FontFamily>
+
+    <SolidColorBrush x:Key="KspBgMain" Color="#0F1112"/>
+    <SolidColorBrush x:Key="KspBgPanel" Color="#131618"/>
+    <SolidColorBrush x:Key="KspBgDeep" Color="#0A0C0D"/>
+    <SolidColorBrush x:Key="KspBgChip" Color="#1C2124"/>
+
+    <SolidColorBrush x:Key="KspCyan" Color="#00F0FF"/>
+    <SolidColorBrush x:Key="KspOrange" Color="#F95213"/>
+    <SolidColorBrush x:Key="KspOrangeAlt" Color="#FF6A00"/>
+
+    <SolidColorBrush x:Key="KspTextMuted" Color="#6C7A84"/>
+    <SolidColorBrush x:Key="KspTextLabel" Color="#A0AAB2"/>
+    <SolidColorBrush x:Key="KspTextLight" Color="#E5E5EA"/>
+    <SolidColorBrush x:Key="KspBorderDark" Color="#22272B"/>
+    <SolidColorBrush x:Key="KspBorderLight" Color="#2A3135"/>
+</ResourceDictionary>
