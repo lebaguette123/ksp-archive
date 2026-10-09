@@ -1,0 +1,166 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ===== Text roles ===== -->
+    <Style Selector="TextBlock.title">
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="LetterSpacing" Value="-0.3"/>
+        <Setter Property="Foreground" Value="{DynamicResource KspTextLight}"/>
+    </Style>
+
+    <Style Selector="TextBlock.section">
+        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="LetterSpacing" Value="1.2"/>
+        <Setter Property="Foreground" Value="{DynamicResource KspTextMuted}"/>
+        <Setter Property="Margin" Value="0,0,0,10"/>
+    </Style>
+
+    <Style Selector="TextBlock.label">
+        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="Foreground" Value="{DynamicResource KspTextMuted}"/>
+    </Style>
+
+    <Style Selector="TextBlock.value">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Foreground" Value="{DynamicResource KspTextLight}"/>
+    </Style>
+
+    <Style Selector="TextBlock.body">
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="LineHeight" Value="19"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="Foreground" Value="{DynamicResource KspTextLabel}"/>
+    </Style>
+
+    <Style Selector="TextBlock.mono">
+        <Setter Property="FontFamily" Value="{DynamicResource KspMonospace}"/>
+    </Style>
+
+    <!-- ===== Surfaces ===== -->
+    <Style Selector="Border.rule">
+        <Setter Property="Height" Value="1"/>
+        <Setter Property="Background" Value="{DynamicResource KspBorderDark}"/>
+    </Style>
+
+    <Style Selector="Border.card">
+        <Setter Property="Background" Value="{DynamicResource KspBgPanel}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource KspBorderDark}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CornerRadius" Value="2"/>
+        <Setter Property="Padding" Value="14,12"/>
+    </Style>
+
+    <!-- ===== Text fields ===== -->
+    <Style Selector="TextBox.field">
+        <Setter Property="Foreground" Value="{DynamicResource KspTextLight}"/>
+        <Setter Property="CaretBrush" Value="{DynamicResource KspAccent}"/>
+        <Setter Property="CornerRadius" Value="2"/>
+        <Setter Property="Padding" Value="10,8"/>
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+    <Style Selector="TextBox.field /template/ Border#PART_BorderElement">
+        <Setter Property="Background" Value="{DynamicResource KspBgDeep}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource KspBorderLight}"/>
+    </Style>
+    <Style Selector="TextBox.field:pointerover /template/ Border#PART_BorderElement">
+        <Setter Property="Background" Value="{DynamicResource KspBgDeep}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource KspBorderLight}"/>
+    </Style>
+    <Style Selector="TextBox.field:focus /template/ Border#PART_BorderElement">
+        <Setter Property="Background" Value="{DynamicResource KspBgDeep}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource KspAccent}"/>
+    </Style>
+
+    <!-- ===== Primary action ===== -->
+    <Style Selector="Button.primary">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="CornerRadius" Value="2"/>
+        <Setter Property="Padding" Value="12,9"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    </Style>
+    <Style Selector="Button.primary /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource KspAction}"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+    <Style Selector="Button.primary:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource KspActionHover}"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+    <Style Selector="Button.primary:pressed /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource KspAction}"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <!-- ===== Category chips (a ListBox, so the active one is a real selection) ===== -->
+    <Style Selector="ListBox.chips">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Padding" Value="0"/>
+    </Style>
+    <Style Selector="ListBox.chips ListBoxItem">
+        <Setter Property="MinHeight" Value="0"/>
+        <Setter Property="Padding" Value="9,5"/>
+        <Setter Property="Margin" Value="0,0,4,4"/>
+        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="CornerRadius" Value="2"/>
+    </Style>
+    <Style Selector="ListBox.chips ListBoxItem /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource KspBgChip}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource KspBorderLight}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Foreground" Value="{DynamicResource KspTextLabel}"/>
+    </Style>
+    <Style Selector="ListBox.chips ListBoxItem:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource KspBgRaised}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource KspBorderLight}"/>
+        <Setter Property="Foreground" Value="{DynamicResource KspTextLight}"/>
+    </Style>
+    <Style Selector="ListBox.chips ListBoxItem:selected /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource KspAccentDim}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource KspAccent}"/>
+        <Setter Property="Foreground" Value="{DynamicResource KspAccent}"/>
+    </Style>
+    <Style Selector="ListBox.chips ListBoxItem:selected:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource KspAccentDim}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource KspAccent}"/>
+        <Setter Property="Foreground" Value="{DynamicResource KspAccent}"/>
+    </Style>
+
+    <!-- ===== Parts list: selection is a thin accent edge, not a filled bar ===== -->
+    <Style Selector="ListBox.parts ListBoxItem">
+        <Setter Property="MinHeight" Value="0"/>
+        <Setter Property="Padding" Value="10,7"/>
+        <Setter Property="CornerRadius" Value="0"/>
+    </Style>
+    <Style Selector="ListBox.parts ListBoxItem /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="2,0,0,0"/>
+    </Style>
+    <Style Selector="ListBox.parts ListBoxItem:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource KspBgPanel}"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+    </Style>
+    <Style Selector="ListBox.parts ListBoxItem:selected /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource KspBgChip}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource KspAccent}"/>
+    </Style>
+    <Style Selector="ListBox.parts ListBoxItem:selected:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource KspBgChip}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource KspAccent}"/>
+    </Style>
+
+    <!-- ===== Resource bars ===== -->
+    <Style Selector="ProgressBar.slim">
+        <Setter Property="Height" Value="4"/>
+        <Setter Property="CornerRadius" Value="1"/>
+        <Setter Property="Background" Value="{DynamicResource KspBgChip}"/>
+        <Setter Property="Foreground" Value="{DynamicResource KspAccent}"/>
+    </Style>
+</Styles>
